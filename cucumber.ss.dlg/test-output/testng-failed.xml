@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [DLG - UXP - SS Test Suite]" allow-return-values="true">
+  <listeners>
+    <listener class-name="listeners.CustomListeners"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Self Service Test Pack(failed)">
+    <classes>
+      <class name="cucumber.ss.dlg.SSrunnerTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="quitDriver"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- cucumber.ss.dlg.SSrunnerTest -->
+    </classes>
+  </test> <!-- Self Service Test Pack(failed) -->
+</suite> <!-- Failed suite [DLG - UXP - SS Test Suite] -->
